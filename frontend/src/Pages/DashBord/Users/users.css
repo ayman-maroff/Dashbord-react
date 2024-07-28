@@ -1,0 +1,186 @@
+
+.htitle{
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+ 
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-family: 'Parisienne', cursive;
+  }
+  table{
+    width:100%;
+    table-layout: fixed;
+  }
+  .tbl-header{
+    background-color: rgba(255,255,255,0.3);
+   }
+  .tbl-content{
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  td{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    border-bottom: solid 5px rgba(255,255,255,0.1);
+  }
+  
+  
+  /* demo styles */
+  
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+  section{
+    margin: 50px;
+  }
+  
+  
+
+  
+  
+  /* for custom scrollbar for webkit browser*/
+  
+  ::-webkit-scrollbar {
+      width: 6px;
+  } 
+  ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  } 
+  ::-webkit-scrollbar-thumb {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  }
+  /* Style buttons */
+  .btnadd {
+    background-color: #0a6c80; /* Dark gray background */
+    border: none;
+    color: #ecf0f1; /* Light gray text */
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Darker background on hover */
+.btnadd:hover {
+    background-color: #1de144; /* Slightly darker gray */
+}
+
+/* Icon style */
+.fa-plus {
+    font-size: 20px;
+}
+
+.btndelete {
+    background-color: #0a6c80; /* Dark gray background */
+    border: none;
+    color: #ecf0f1; /* Light gray text */
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Darker background on hover */
+.btndelete:hover {
+    background-color: #c41622; /* Slightly darker gray */
+}
+.search {
+  
+    position: absolute;
+    top: 30%;
+    right: 50px;  /* Changed from "left" to "right" */
+    transform: translateY(-50%);
+    color: rgba(16, 3, 3, 0.8);
+    font-family: 'Parisienne', cursive;
+    cursor: default;
+    user-select: none;
+    
+}
+.searchlabel {
+    position: absolute;
+    top: 30%;
+    right: 260px;  /* Changed from "left" to "right" */
+    transform: translateY(-50%);
+    color: rgba(245, 243, 243, 0.8);
+    font-family: 'Parisienne', cursive;
+    cursor: default;
+    user-select: none;
+    font-weight: bold;
+}
+
+
+  .search-box{
+    position: absolute;
+  
+    top: 26%;
+    right: 50px; 
+  
+   
+  }
+  .input-search{
+    height: 0px;
+    width: 0px;
+    border-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    
+    outline: none;
+    transition: all .5s ease-in-out;
+    background-color:transparent;;
+    color:#fff;
+  }
+  .input-search::placeholder{
+    color:rgba(255,255,255,.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  .btn-search{
+  background-color: #0a6c80; /* Dark gray background */
+    border: none;
+    color: #ecf0f1; /* Light gray text */
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease; 
+  }
+  .btn-search:hover {
+    background-color: #b5dd25; /* Slightly darker gray */
+}
+  .btn-search:focus ~ .input-search{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  

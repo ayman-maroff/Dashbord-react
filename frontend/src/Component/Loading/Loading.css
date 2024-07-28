@@ -1,0 +1,37 @@
+
+.spinner-container {
+    width: 20%;
+    height: 20vh;
+    display: contents;
+    background-color: rgb(164, 196, 228);
+   
+    justify-content: center;
+}
+
+.spinner {
+    position: relative;
+    margin: 0 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 6px solid #7e7c7c;
+    border-top: 6px solid rgb(7, 192, 56);
+    animation: rotating-spinner 1s linear infinite;
+}
+
+@keyframes rotating-spinner {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.para {
+    font-family: 'Parisienne', cursive;
+    font-weight: bold;
+    font-size: xx-large;
+    color: bisque;
+}
